@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFFD6E02-33A2-443A-8EEB-0613C2859834}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MarioOrPlatformer</RootNamespace>
+    <AssemblyName>MarioOrPlatformer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LifeCounter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameFinalLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameFinalLevel.Designer.cs">
+      <DependentUpon>GameFinalLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameFirstLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameFirstLevel.Designer.cs">
+      <DependentUpon>GameFirstLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelSelector.Designer.cs">
+      <DependentUpon>LevelSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFinalLevel.resx">
+      <DependentUpon>GameFinalLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFirstLevel.resx">
+      <DependentUpon>GameFirstLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelSelector.resx">
+      <DependentUpon>LevelSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486486316-arrow-film-movie-play-player-start-video_81236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingscog_87317.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerHQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\still.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform.png" />
+    <None Include="Resources\platformground.png" />
+    <None Include="Resources\levelBackground.jpg" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\go.jpg" />
+    <None Include="Resources\Gt.png" />
+    <None Include="Resources\block.png" />
+    <None Include="Resources\coin.png" />
+    <None Include="Resources\gameover.jpg" />
+    <None Include="Resources\castle.png" />
+    <None Include="Resources\flag.png" />
+    <None Include="Resources\flagN.png" />
+    <Content Include="Resources\jumpin.png" />
+    <None Include="Resources\playP1.png" />
+    <None Include="Resources\playButton1.png" />
+    <None Include="Resources\playButton.png" />
+    <None Include="Resources\playButtonPressed.png" />
+    <None Include="Resources\runningReverse.gif" />
+    <None Include="Resources\running.gif" />
+    <None Include="Resources\stillReverse.png" />
+    <None Include="Resources\jumpinReverse.png" />
+    <None Include="Resources\jumpin1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
